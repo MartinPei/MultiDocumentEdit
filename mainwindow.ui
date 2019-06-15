@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>775</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionnew_file_n"/>
+    <addaction name="actionopen_file_o"/>
+    <addaction name="separator"/>
+    <addaction name="actionsave_S"/>
+    <addaction name="actionsave_as_A"/>
+    <addaction name="separator"/>
+    <addaction name="actionexit_X"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="actionundo"/>
+    <addaction name="actionrecovery_R"/>
+    <addaction name="separator"/>
+    <addaction name="actioncut_T"/>
+    <addaction name="actioncopy_C"/>
+    <addaction name="actionpaste_P"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗口(&amp;W)</string>
+    </property>
+    <addaction name="actionclose"/>
+    <addaction name="actionclose_all_A"/>
+    <addaction name="separator"/>
+    <addaction name="actiontiling_T"/>
+    <addaction name="actioncascading_C"/>
+    <addaction name="separator"/>
+    <addaction name="actionnext_X"/>
+    <addaction name="actionprevious_Y"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionabout"/>
+    <addaction name="actionabout_qt_Q"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionnew_file_n">
+   <property name="text">
+    <string>new file(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen_file_o">
+   <property name="text">
+    <string>open file(&amp;O)...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave_S">
+   <property name="text">
+    <string>save(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as_A">
+   <property name="text">
+    <string>save as(&amp;A)...</string>
+   </property>
+  </action>
+  <action name="actionexit_X">
+   <property name="text">
+    <string>exit(&amp;X)</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>undo(&amp;U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionrecovery_R">
+   <property name="text">
+    <string>recovery(&amp;R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actioncut_T">
+   <property name="text">
+    <string>cut(&amp;T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actioncopy_C">
+   <property name="text">
+    <string>copy(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionpaste_P">
+   <property name="text">
+    <string>paste(&amp;P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="text">
+    <string>close(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionclose_all_A">
+   <property name="text">
+    <string>close all(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actiontiling_T">
+   <property name="text">
+    <string>tiling(&amp;T)</string>
+   </property>
+  </action>
+  <action name="actioncascading_C">
+   <property name="text">
+    <string>cascading(&amp;C)</string>
+   </property>
+  </action>
+  <action name="actionnext_X">
+   <property name="text">
+    <string>next(&amp;X)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Tab</string>
+   </property>
+  </action>
+  <action name="actionprevious_Y">
+   <property name="text">
+    <string>previous(&amp;Y)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Tab</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>about(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionabout_qt_Q">
+   <property name="text">
+    <string>about qt(&amp;Q)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
